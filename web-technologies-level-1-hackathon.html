@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+
+<style>
+    body {
+        font-family: book antiqua;
+        background-color: rgb(140, 140, 134);
+    }
+    
+    h1 {
+        color: blue;
+        font-size: 15px;
+    }
+    
+    p {
+        color: rgb(134, 13, 13);
+        font-size: 25px;
+    }
+    
+    .image-section img {
+        border: none;
+        width: fit-content;
+        height: fit-content;
+    }
+	.Register {
+		background-color: rgb(23, 108, 20);
+		color: rgb(250, 250, 244);
+		border: none;
+		border-radius: 5px;
+        height: 20px;
+        width: 80px;
+	}
+
+	.reset {
+		background-color: rgb(23, 108, 20);
+		color: rgb(250, 250, 244);
+		border: none;
+        height: 20px;
+        width: 80px;
+		border-radius: 5px;
+
+	}
+    .welcome-container{
+       
+        width: fit-content;
+        height: 100px;
+        font-family: book antiqua;
+        font-size: 15;
+        
+
+    }
+    .mkubwa{
+        font-size: 30;
+        background-color:
+         rgb(44, 52, 49);
+        color: white;
+        
+    }
+    
+    </style>
+
+
+    <!-- Image section -->
+    <section class="image-section">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Autoplay Slideshow</title>
+            <style>
+                /* Hide all images by default */
+                .slides {
+                    display: none;
+                }
+                /* Style the image container */
+                .slideshow-container {
+                    width: 50%;
+                    height: 40%;
+                    position: relative;
+                    margin: auto;
+                }
+                /* Style the navigation buttons */
+                .prev, .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                    transition: 30s;
+
+                }
+                /* Position the 'previous' button */
+                .prev {
+                    left: 0;
+                }
+                /* Position the 'next' button */
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+            </style>
+        </head>
+
+        <header class="mkubwa"> 
+            <section>WELSEN'S SCHOLARSHIP</section>
+           </header>
+        <body>
+        
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slides">
+                <img src="https://www.traditions.bank/wp-content/uploads/2021/10/21575838_m-2160x1440.jpg" 
+                style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="https://www.nigeriaschool.com.ng/wp-content/uploads/2019/02/school-1024x683.jpg" 
+                style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="https://www.insightplatforms.com/wp-content/uploads/2023/03/UpsiideConceptTesting-1024x683.jpg" 
+                style="width:100%">
+            </div>
+            <div class="slides">
+                <img src="https://southeasternurogyn.com/wp-content/uploads/2022/03/Pelvic-Prolapse-Treatment.jpg" 
+                style="width:100%">
+        
+                <div class="slides">
+                    <img src="https://www.dovecomputing.com/dove_universities_1E.jpg" 
+                    style="width:100%">
+                </div>
+            </div>
+            <!-- Navigation buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <script>
+            var slideIndex = 0;
+            var slides = document.getElementsByClassName("slides");
+            var totalSlides = slides.length;
+        
+            function showSlides() {
+                // Hide all slides
+                for (var i = 0; i < totalSlides; i++) {
+                    slides[i].style.display = "none";
+                }
+        
+                // Show the next slide
+                slideIndex++;
+                if (slideIndex >= totalSlides) {
+                    slideIndex = 0; // Reset index to loop
+                }
+                slides[slideIndex].style.display = "block";
+        
+                // Schedule the next slide
+                setTimeout(showSlides, 2000); // Change slide every 2 seconds
+            }
+        
+            // Start the slideshow
+            showSlides();
+        
+            // Function to navigate to the next or previous slide manually
+            function plusSlides(n) {
+                slideIndex += n;
+                if (slideIndex >= totalSlides) {
+                    slideIndex = 0; // Reset index to loop
+                } else if (slideIndex < 0) {
+                    slideIndex = totalSlides - 1; // Wrap around to the last slide
+                }
+                showSlides();
+            }
+        </script>
+
+
+<body>
+    
+    <p>
+        <section>
+            <div class="welcome-container">
+             <p><strong> Welcome to welsen's scholarship!</strong>
+                </br>
+                We're delighted to have you here. Whether you're a new visitor or a returning one, 
+                we hope you enjoy exploring our site.</p>
+        </section>
+       
+    </div></p>
+
+    <p>
+        <head><strong>Power Learn Project (PLP)</strong></head>
+        </br>
+        The 16-week software development training will empower you with the skills to launch your tech career. 
+        The program offers a fully-funded, virtual and self-paced software development training program that 
+        covers four technical modules alongside entrepreneurship and personal development. Learning is delivered 
+        entirely online, allowing you to learn anytime, anywhere, and at your own pace with a vibrant community by your side.
+        For more information about this Scholarship, please visit at 
+        <a href="https://www.bing.com/ck/a?!&&p=04fdaabb58b8ae88JmltdHM9MTcxMDgwNjQwMCZpZ3VpZD0zYTJmODljZS02YmE3LTYzNTctMWYzZi05ZGVlNmE4YjYyNzQmaW5zaWQ9NTIwMA&ptn=3&ver=2&hsh=3&fclid=3a2f89ce-6ba7-6357-1f3f-9dee6a8b6274&psq=plp&u=a1aHR0cHM6Ly9wb3dlcmxlYXJucHJvamVjdC5vcmcv&ntb=1" 
+        target="_blank">Power Learn Project (PLP)</a>.
+    </p>
+        
+        </body>
+        </html>
+    </section>
+
+    <!-- Form section -->
+    <section class="form-section">
+        <head>You are interested with the scholarship?
+        </BR>
+        Please Register here...
+        </br>
+        </head>
+        <form action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </fieldset>
+
+            <label for="subjects">Select Subjects:</label>
+            <select id="subjects" name="subjects" multiple>
+                <option value="English">English</option>
+                <option value="Math">Math</option>
+                <!-- Add other subjects here -->
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="hidden" id="sessionId" name="sessionId" value="your-session-id">
+
+            <button class="reset" type="reset">Cancel</button>
+            <button class="Register" type="submit">Register</button>
+        </section>
+    </form>
+    
+</body>
+</html>
